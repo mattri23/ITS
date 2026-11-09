@@ -49,7 +49,7 @@ int main()
 
     //input 2 caratteri, chi viene prima in ordine alfabetico
 
-    
+    /*
     char c1, c2;
     printf("inserisci il primo carattere\n");
     scanf(" %c", &c1);
@@ -72,13 +72,13 @@ int main()
         printf("%c viene prima alfabeticamente", c2);
         break;
     }
-    
+    */
 
     
 
     //risolvi le equazioni di secondo grado
 
-    /*int a, b, c, x1, x2;
+    int a, b, c, x1, x2;
     printf("inserisci a\n");
     scanf("%d", &a);
     printf("inserisci b\n");
@@ -93,6 +93,6 @@ int main()
         printf("x1 = %d\nx2 = %d", x1, x2);
     }
     else printf("delta minore di 0");
-    */
+    
 }
 
