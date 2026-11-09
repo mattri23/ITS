@@ -20,14 +20,18 @@ int main()
     */
 
     /*int anno;
-    while (true){
+    printf("inserisci un anno\n");
+    scanf("%d", &anno);
+    while (anno > 0){
+        ((anno % 400 == 0 || (anno % 4 == 0 && anno % 100 != 0))
+            ? printf("%d e' bisestile\n", anno)
+            : printf("%d anno non bisestile\n", anno));
         printf("inserisci un anno\n");
         scanf("%d", &anno);
-        (anno % 400 == 0 || (anno % 4 == 0 && anno % 100 != 0)) 
-            ? printf("%d e' bisestile\n", anno) 
-            : printf("%d anno non bisestile\n", anno);
-    }*/
-
+    }
+    printf("grazie, arrivederci");
+    return 0;
+    */
 
     //chiedi 5 num, ritorna valore minore, maggiore, media dei valori
     /*
@@ -78,7 +82,7 @@ int main()
 
     //risolvi le equazioni di secondo grado
 
-    int a, b, c, x1, x2;
+    /*int a, b, c, x1, x2;
     printf("inserisci a\n");
     scanf("%d", &a);
     printf("inserisci b\n");
@@ -93,6 +97,30 @@ int main()
         printf("x1 = %d\nx2 = %d", x1, x2);
     }
     else printf("delta minore di 0");
-    
+    */
+
+    //numero is primo
+
+    int num;
+    bool primo = true;
+
+    printf("inserisci un numero\n");
+    scanf("%d", &num);
+
+    for (int i = 2; i < num / 2; i++)
+    {
+        if (num % i == 0)
+        {
+            primo = false;
+        }
+    }
+    if (num == 0 || num  == 1)
+    {
+        primo = false;
+    }
+    primo 
+        ? printf("il numero e' primo")
+        : printf("il numero non e' primo");
+
 }
 
